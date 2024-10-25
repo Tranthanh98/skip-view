@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Story Viewer Blocker",
+  "version": "1.0",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://www.instagram.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_unified_cvc",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
